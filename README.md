@@ -1,3 +1,19 @@
+## Eslint, Prettier configurations
+
+https://medium.com/quick-code/how-to-integrate-eslint-prettier-in-react-6efbd206d5c4
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+https://code.visualstudio.com/docs/getstarted/settings
+
+npm install -g eslint, prettier
+Add extentions to VS code
+#commands :
+npx eslint "src/**/\*.js"
+npx eslint "src/**/\*.js" --fix
+
+prettier --write "src/**/\*.js"
+prettier --check "src/**/\*.js"
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
