@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './BeerDetails.scss';
 
-class Home extends Component {
+class BeerDetails extends Component {
     render() {
         return (
             <section>
@@ -12,4 +12,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default BeerDetails;

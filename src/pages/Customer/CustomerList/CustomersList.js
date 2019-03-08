@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Table from '../../../components/Table/Table';
-import './BeersList.scss';
+import './CustomersList.scss';
 import routes from '../../../components/Routes/Routes.const';
 
 let i = 0;
@@ -38,7 +38,7 @@ const columns = [
         Header: 'Dessert (100g serving)',
         accessor: 'name',
         Cell: ({ original, value }) => (
-            <Link to={`${routes.BEERS_LIST}/${original.id}`}>{value}</Link>
+            <Link to={`${routes.CUSOMERS_LIST}/${original.id}`}>{value}</Link>
         )
     },
     {
@@ -55,15 +55,15 @@ const columns = [
     }
 ];
 
-class BeersList extends Component {
+class CustomersList extends Component {
     render() {
         return (
             <section>
-                Beer List
+                Customer List
                 <Table rows={rows} columns={columns} />
             </section>
         );
     }
 }
 
-export default BeersList;
+export default CustomersList;

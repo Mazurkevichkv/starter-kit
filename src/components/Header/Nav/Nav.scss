@@ -1,7 +1,11 @@
 .nav {
-    a {
+    .nav-link {
         margin: 10px;
         color: white;
-        outline: none;
+    }
+
+    .nav-link:hover,
+    .nav-link--active {
+        color: red;
     }
 }
