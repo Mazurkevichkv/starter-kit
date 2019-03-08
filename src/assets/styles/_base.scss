@@ -8,6 +8,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 #root {
     position: fixed;
     top: 0px;
