@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './BeerDetails.scss';
 
 class BeerDetails extends Component {
@@ -12,4 +13,4 @@ class BeerDetails extends Component {
     }
 }
 
-export default BeerDetails;
+export default connect()(BeerDetails);
