@@ -7,6 +7,7 @@ import BeerDetails from '../../pages/Beer/BeerDetails/BeerDetails';
 import CustomersList from '../../pages/Customer/CustomerList/CustomersList';
 import CustomerDetails from '../../pages/Customer/CustomerDetails/CustomerDetails';
 import PageNotFound from '../../pages/PageNotFound/PageNotFound';
+import PrivateRoute from '../HOC/PrivateRoute/PrivateRoute';
 import routes from './Routes.const';
 
 export default () => (
@@ -17,6 +18,6 @@ export default () => (
         <Route path={routes.BEER_DETAILS} component={BeerDetails} />
         <Route exact path={routes.CUSOMERS_LIST} component={CustomersList} />
         <Route path={routes.CUSTOMER_DETAILS} component={CustomerDetails} />
-        <Route component={PageNotFound} />
+        <PrivateRoute component={PageNotFound} />
     </Switch>
 );
